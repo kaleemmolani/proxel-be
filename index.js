@@ -12,7 +12,7 @@ connectDB();
 const app = express()
 app.use(express.urlencoded({extended:false}));
 app.use(express.json())
-const apiPort = 3004
+const apiPort = process.env.PORT || 5000
 
 //session middleware
 app.use(session({

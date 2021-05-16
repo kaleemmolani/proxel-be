@@ -1,0 +1,27 @@
+###
+GET http://localhost:3004/schema/account
+###
+GET http://localhost:3004/schema/account/record
+###
+GET http://localhost:3004/db/list/leads
+
+
+###
+GET http://localhost:3004/db/
+
+###
+POST http://localhost:3004/schema/account
+Content-Type: application/json
+
+{
+    "name":"account",
+    "properties":[
+        {
+            "name":"name",
+            "datatype":"string",
+            "islookup":false,
+            "required":false
+        }
+    ],
+    "owner":"kaleem"
+}
